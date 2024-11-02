@@ -1,0 +1,47 @@
+server:
+  port: 7100
+
+
+spring: 
+  datasource:
+    url: jdbc:postgresql://localhost:5434/meli
+    username: postgres
+    password: 12345
+    
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: meli
+        temp: 
+          use_jdbc_metadata_defaults: false
+        format_sql: true
+  cloud:
+    config:
+      enabled: false
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.hibernate: ERROR
+  file:
+    name: logs/meli_challenge.log
+
+
+    
+
+
+localizarip:
+  url: http://api.ipapi.com/api
+  apikey: 6a507ec223311991da36a5ac892609ee
+  
+infopais:
+  url: https://ipapi.co
+
+currencyinfo:
+  url: https://v6.exchangerate-api.com/v6
+  
+  
