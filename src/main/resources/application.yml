@@ -43,5 +43,6 @@ infopais:
 
 currencyinfo:
   url: https://v6.exchangerate-api.com/v6
+  apikey: e0d168703c165811128a541a
   
   

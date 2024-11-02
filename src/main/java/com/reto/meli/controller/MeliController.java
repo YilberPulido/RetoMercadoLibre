@@ -16,7 +16,7 @@ import com.reto.meli.services.impl.MeliServices;
 import io.swagger.v3.oas.annotations.Operation;
 
 @Controller
-@RequestMapping("/v1/alcoholimetro")
+@RequestMapping("/v1/traceip")
 public class MeliController {
 	
 	@Autowired

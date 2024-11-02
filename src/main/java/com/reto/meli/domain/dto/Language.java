@@ -2,6 +2,8 @@ package com.reto.meli.domain.dto;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+
 public class Language implements Serializable{
 	
 	/**
@@ -10,6 +12,8 @@ public class Language implements Serializable{
 	private static final long serialVersionUID = -5868393287956223282L;
 	private String code;
     private String name;
+    
+    @JsonAlias("native")
     private String nativeName;
 
 	public Language() {
