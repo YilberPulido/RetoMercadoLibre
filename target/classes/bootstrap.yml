@@ -1,0 +1,12 @@
+spring: 
+  application:
+    name: meli-server
+  profiles:
+    active:
+    - dev
+  cloud:
+    config:
+      uri:  http://localhost:8888
+      username: user
+      password: 123
+     
