@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: postgres
+    ports:
+      - "5436:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - meli-network
+
+  app:
+    build: .
+    container_name: meli-app
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/postgres
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 12345
+      SERVER_PORT: 7100
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "7100:7100" 
+    volumes:
+      - ./logs:/app/logs  
+    networks:
+      - meli-network
+
+networks:
+  meli-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    name: meli-postgres-data 

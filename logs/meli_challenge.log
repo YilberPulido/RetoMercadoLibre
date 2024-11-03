@@ -1,682 +1,369 @@
-2024-11-02T10:12:00.692-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:12:00.704-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:12:00.808-05:00  INFO 6284 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-11-02T10:12:00.809-05:00  INFO 6284 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-11-02T10:12:02.711-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:12:02.758-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:12:03.178-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:12:04.026-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:12:04.049-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:12:04.052-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:12:04.161-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:12:04.162-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3352 ms
-2024-11-02T10:12:05.388-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:12:06.057-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:12:06.421-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:12:06.483-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:12:08.477-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:12:08.885-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 9.489 seconds (process running for 11.073)
-2024-11-02T10:12:18.020-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-02T10:12:18.021-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-02T10:12:18.023-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-11-02T10:12:18.702-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 318 ms
-2024-11-02T10:12:53.409-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-5] c.reto.meli.controller.MeliController    : ProcessIpRequest [ip=181.32.7.144]
-2024-11-02T10:12:53.413-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-5] c.reto.meli.services.impl.MeliServices   : ProcessIpRequest [ip=181.32.7.144]
-2024-11-02T10:12:53.413-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-5] com.reto.meli.domain.helper.HelperApis   : 181.32.7.144
-2024-11-02T10:12:53.413-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-5] com.reto.meli.domain.helper.HelperApis   : 6a507ec223311991da36a5ac892609ee
-2024-11-02T10:13:47.695-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:13:48.401-05:00  INFO 6284 --- [meli] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:13:48.870-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:13:48.871-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:13:49.254-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:13:49.261-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:13:49.326-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:13:49.432-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:13:49.434-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:13:49.434-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:13:49.473-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:13:49.473-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 598 ms
-2024-11-02T10:13:49.543-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:13:49.579-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:13:49.718-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:13:49.754-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:13:50.866-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:13:51.290-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.811 seconds (process running for 113.477)
-2024-11-02T10:13:51.293-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:13:55.491-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-02T10:13:55.492-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-02T10:13:55.499-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2024-11-02T10:13:55.506-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] c.reto.meli.controller.MeliController    : ProcessIpRequest [ip=181.32.7.144]
-2024-11-02T10:13:55.506-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] c.reto.meli.services.impl.MeliServices   : ProcessIpRequest [ip=181.32.7.144]
-2024-11-02T10:13:55.506-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] com.reto.meli.domain.helper.HelperApis   : 181.32.7.144
-2024-11-02T10:13:55.506-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-2] com.reto.meli.domain.helper.HelperApis   : 6a507ec223311991da36a5ac892609ee
-2024-11-02T10:14:27.346-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:14:28.084-05:00  INFO 6284 --- [meli] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:14:28.527-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:14:28.528-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:14:28.891-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:14:28.897-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:14:28.983-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:14:29.068-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:14:29.069-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:14:29.069-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:14:29.119-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:14:29.119-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 586 ms
-2024-11-02T10:14:29.184-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:14:29.217-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:14:29.290-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:14:29.311-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:14:30.307-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:14:30.681-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.531 seconds (process running for 152.869)
-2024-11-02T10:14:30.684-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:15:03.699-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:15:04.351-05:00  INFO 6284 --- [meli] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:15:04.789-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:15:04.789-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:15:05.148-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:15:05.154-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:15:05.204-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:15:05.282-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:15:05.283-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:15:05.283-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:15:05.325-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:15:05.325-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 533 ms
-2024-11-02T10:15:05.407-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:15:05.435-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:15:05.508-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:15:05.528-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:15:06.929-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:15:07.283-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.871 seconds (process running for 189.47)
-2024-11-02T10:15:07.284-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:15:59.915-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:16:00.610-05:00  INFO 6284 --- [meli] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:16:01.165-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:16:01.166-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:16:01.503-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:16:01.509-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:16:01.576-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:16:01.663-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:16:01.664-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:16:01.664-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:16:01.699-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:16:01.699-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 530 ms
-2024-11-02T10:16:01.761-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:16:01.790-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:16:01.853-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:16:01.873-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:16:02.980-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:16:03.339-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.658 seconds (process running for 245.527)
-2024-11-02T10:16:03.342-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:16:21.143-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:16:21.768-05:00  INFO 6284 --- [meli] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:16:22.237-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:16:22.237-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:16:22.621-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:16:22.625-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:16:22.676-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:16:22.762-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:16:22.762-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:16:22.763-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:16:22.800-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:16:22.800-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 560 ms
-2024-11-02T10:16:22.860-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:16:22.886-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:16:22.964-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:16:22.983-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:16:24.043-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:16:24.385-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.557 seconds (process running for 266.574)
-2024-11-02T10:16:24.388-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:16:33.820-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-02T10:16:33.820-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-02T10:16:33.822-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-11-02T10:16:33.828-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-1] c.reto.meli.controller.MeliController    : ProcessIpRequest [ip=181.32.7.144]
-2024-11-02T10:16:33.829-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-1] c.reto.meli.services.impl.MeliServices   : ProcessIpRequest [ip=181.32.7.144]
-2024-11-02T10:16:33.829-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-1] com.reto.meli.domain.helper.HelperApis   : 181.32.7.144
-2024-11-02T10:16:33.829-05:00  INFO 6284 --- [meli] [http-nio-7100-exec-1] com.reto.meli.domain.helper.HelperApis   : 6a507ec223311991da36a5ac892609ee
-2024-11-02T10:20:36.978-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-11-02T10:20:37.793-05:00  INFO 6284 --- [meli] [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:20:38.251-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:20:38.251-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:20:38.600-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:20:38.606-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:20:38.664-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:20:38.746-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:20:38.747-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:20:38.747-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:20:38.787-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:20:38.788-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 535 ms
-2024-11-02T10:20:38.847-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:20:38.877-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:20:38.945-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:20:38.963-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:20:39.991-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:20:40.329-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.473 seconds (process running for 522.517)
-2024-11-02T10:20:40.331-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:24:45.573-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:24:46.359-05:00  INFO 6284 --- [meli] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:24:46.813-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:24:46.813-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:24:47.315-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:24:47.324-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:24:47.414-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:24:47.528-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:24:47.530-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:24:47.530-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:24:47.597-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:24:47.597-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 781 ms
-2024-11-02T10:24:47.665-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:24:47.702-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:24:47.840-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:24:47.874-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:24:49.035-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:24:49.404-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.978 seconds (process running for 771.591)
-2024-11-02T10:24:49.406-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:24:50.072-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:24:50.675-05:00  INFO 6284 --- [meli] [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:24:51.191-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:24:51.191-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:24:51.510-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:24:51.515-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:24:51.566-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:24:51.645-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:24:51.646-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:24:51.647-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:24:51.700-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:24:51.700-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 506 ms
-2024-11-02T10:24:51.762-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:24:51.786-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:24:51.857-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:24:51.875-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:24:52.970-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:24:53.379-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.635 seconds (process running for 775.567)
-2024-11-02T10:24:53.381-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:35:24.410-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:35:25.028-05:00  INFO 6284 --- [meli] [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:35:25.463-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:35:25.463-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:35:25.813-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:35:25.817-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:35:25.878-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e4cc74a-be92-309c-83b8-bba09fcc07f8
-2024-11-02T10:35:26.015-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:35:26.017-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:35:26.017-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:35:26.091-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:35:26.091-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
-2024-11-02T10:35:26.180-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:35:26.211-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:35:26.275-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:35:26.298-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:35:27.370-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:35:27.783-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.691 seconds (process running for 1409.971)
-2024-11-02T10:35:27.785-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:50:37.949-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
-2024-11-02T10:50:38.570-05:00  INFO 6284 --- [meli] [Thread-57] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:50:39.165-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:50:39.165-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:50:39.591-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:50:39.597-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:50:39.655-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0cdffb61-63d7-3d13-ae18-f4fe8f717f00
-2024-11-02T10:50:39.740-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:50:39.741-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:50:39.741-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:50:39.780-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:50:39.781-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 612 ms
-2024-11-02T10:50:39.894-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:50:39.928-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:50:40.006-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:50:40.026-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:50:41.119-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:50:41.522-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.874 seconds (process running for 2323.709)
-2024-11-02T10:50:41.523-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:52:03.088-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:52:03.711-05:00  INFO 6284 --- [meli] [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:52:04.169-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:52:04.170-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:52:04.485-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:52:04.490-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:52:04.555-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0cdffb61-63d7-3d13-ae18-f4fe8f717f00
-2024-11-02T10:52:04.647-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:52:04.648-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:52:04.648-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:52:04.711-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:52:04.711-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 539 ms
-2024-11-02T10:52:04.780-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:52:04.811-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:52:04.880-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:52:04.900-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:52:06.302-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:52:06.716-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.934 seconds (process running for 2408.903)
-2024-11-02T10:52:06.718-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T10:54:16.513-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T10:54:17.168-05:00  INFO 6284 --- [meli] [Thread-69] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:54:17.688-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T10:54:17.689-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T10:54:18.018-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T10:54:18.022-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T10:54:18.073-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0cdffb61-63d7-3d13-ae18-f4fe8f717f00
-2024-11-02T10:54:18.189-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T10:54:18.191-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T10:54:18.191-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T10:54:18.229-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T10:54:18.230-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 539 ms
-2024-11-02T10:54:18.297-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T10:54:18.328-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T10:54:18.400-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T10:54:18.419-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T10:54:19.474-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T10:54:19.836-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.598 seconds (process running for 2542.024)
-2024-11-02T10:54:19.838-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:04:43.600-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T11:04:44.203-05:00  INFO 6284 --- [meli] [Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:04:44.673-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:04:44.673-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:04:44.978-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:04:44.982-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:04:45.040-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0cdffb61-63d7-3d13-ae18-f4fe8f717f00
-2024-11-02T11:04:45.132-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:04:45.133-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:04:45.133-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:04:45.198-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:04:45.199-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 523 ms
-2024-11-02T11:04:45.261-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:04:45.290-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:04:45.363-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:04:45.381-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:04:46.530-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:04:46.901-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.629 seconds (process running for 3169.089)
-2024-11-02T11:04:46.903-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:04:50.668-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T11:04:51.385-05:00  INFO 6284 --- [meli] [Thread-81] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:04:51.814-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:04:51.814-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:04:52.140-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:04:52.145-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:04:52.233-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0cdffb61-63d7-3d13-ae18-f4fe8f717f00
-2024-11-02T11:04:52.344-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:04:52.345-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:04:52.345-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:04:52.386-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:04:52.386-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 569 ms
-2024-11-02T11:04:52.465-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:04:52.504-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:04:52.575-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:04:52.593-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:04:53.599-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:04:53.938-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.484 seconds (process running for 3176.126)
-2024-11-02T11:04:53.940-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:10:42.164-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-11-02T11:10:42.966-05:00  INFO 6284 --- [meli] [Thread-87] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:10:43.386-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:10:43.386-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:10:43.698-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:10:43.703-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:10:43.754-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0cdffb61-63d7-3d13-ae18-f4fe8f717f00
-2024-11-02T11:10:43.844-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:10:43.845-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:10:43.845-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:10:43.905-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:10:43.905-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 516 ms
-2024-11-02T11:10:43.970-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:10:43.999-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:10:44.067-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:10:44.087-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:10:45.154-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:10:45.501-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.462 seconds (process running for 3527.689)
-2024-11-02T11:10:45.503-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:26:48.465-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T11:26:49.108-05:00  INFO 6284 --- [meli] [Thread-93] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:26:49.580-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:26:49.580-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:26:49.907-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:26:49.912-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:26:49.967-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0cdffb61-63d7-3d13-ae18-f4fe8f717f00
-2024-11-02T11:26:50.048-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:26:50.048-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:26:50.049-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:26:50.087-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:26:50.088-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 506 ms
-2024-11-02T11:26:50.152-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:26:50.178-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:26:50.247-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:26:50.267-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:26:51.551-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:26:51.932-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.75 seconds (process running for 4500.922)
-2024-11-02T11:26:51.935-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:27:45.794-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
-2024-11-02T11:27:46.548-05:00  INFO 6284 --- [meli] [Thread-99] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:27:46.999-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:27:47.000-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:27:47.294-05:00  WARN 6284 --- [meli] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'ipapi.FeignClientSpecification' defined in null: Cannot register bean definition [Generic bean: class [org.springframework.cloud.openfeign.FeignClientSpecification]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] for bean 'ipapi.FeignClientSpecification' since there is already [Generic bean: class [org.springframework.cloud.openfeign.FeignClientSpecification]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null] bound.
-2024-11-02T11:27:47.304-05:00  INFO 6284 --- [meli] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-11-03T20:36:49.386Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : Starting MeliApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+2024-11-03T20:36:49.392Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : The following 1 profile is active: "docker"
+2024-11-03T20:36:51.554Z  INFO 1 --- [meli] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T20:36:51.671Z  INFO 1 --- [meli] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2024-11-03T20:36:52.029Z  INFO 1 --- [meli] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b301130-dd42-3fba-b54f-1feae9aa5b4e
+2024-11-03T20:36:52.636Z  INFO 1 --- [meli] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
+2024-11-03T20:36:52.654Z  INFO 1 --- [meli] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T20:36:52.656Z  INFO 1 --- [meli] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T20:36:52.722Z  INFO 1 --- [meli] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T20:36:52.723Z  INFO 1 --- [meli] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3187 ms
+2024-11-03T20:36:53.540Z  INFO 1 --- [meli] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T20:36:54.590Z  INFO 1 --- [meli] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:36:54.933Z  WARN 1 --- [meli] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T20:36:55.710Z  INFO 1 --- [meli] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-03T20:36:57.980Z  INFO 1 --- [meli] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
+2024-11-03T20:36:58.031Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : Started MeliApplication in 9.603 seconds (process running for 10.518)
+2024-11-03T20:37:00.028Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T20:37:00.381Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@756acdda
+2024-11-03T20:37:00.386Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T20:37:06.708Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T20:37:06.709Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T20:37:06.712Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-03T20:37:07.548Z  INFO 1 --- [meli] [http-nio-7100-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 325 ms
+2024-11-03T20:37:30.415Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:37:30.420Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T20:37:30.428Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T15:38:00.428-05:00  INFO 2212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 2212 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
+2024-11-03T15:38:00.430-05:00  INFO 2212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T15:38:00.503-05:00  INFO 2212 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-03T15:38:00.504-05:00  INFO 2212 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-03T15:38:01.746-05:00  INFO 2212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T15:38:01.817-05:00  INFO 2212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2024-11-03T15:38:02.036-05:00  INFO 2212 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=75e8e1af-ab5d-3e67-8c2e-0c6c8ce67b99
+2024-11-03T15:38:02.557-05:00  INFO 2212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
+2024-11-03T15:38:02.570-05:00  INFO 2212 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T15:38:02.570-05:00  INFO 2212 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T15:38:02.633-05:00  INFO 2212 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T15:38:02.634-05:00  INFO 2212 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2129 ms
+2024-11-03T15:38:03.185-05:00  INFO 2212 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T15:38:04.050-05:00  INFO 2212 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T15:38:04.278-05:00  WARN 2212 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T15:38:04.328-05:00  INFO 2212 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T15:38:04.631-05:00  INFO 2212 --- [meli] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-03T15:38:06.104-05:00  INFO 2212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
+2024-11-03T15:38:06.398-05:00  INFO 2212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 6.895 seconds (process running for 7.768)
+2024-11-03T15:38:10.023-05:00  INFO 2212 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T15:38:11.075-05:00 ERROR 2212 --- [meli] [taskScheduler-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Connection to localhost:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2024-11-03T15:38:11.082-05:00 ERROR 2212 --- [meli] [taskScheduler-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-11-02T11:27:47.367-05:00 ERROR 6284 --- [meli] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The bean 'ipapi.FeignClientSpecification' could not be registered. A bean with that name has already been defined and overriding is disabled.
-
-Action:
-
-Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
-
-2024-11-02T11:31:15.352-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:31:15.353-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:31:15.750-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:31:15.754-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:31:15.819-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e67481b6-404b-3d63-981e-4612cf34261c
-2024-11-02T11:31:15.950-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:31:15.952-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:31:15.953-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:31:16.003-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:31:16.003-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 647 ms
-2024-11-02T11:31:16.098-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:31:16.134-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:31:16.225-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:31:16.247-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:31:17.480-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:31:17.921-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.977 seconds (process running for 4766.911)
-2024-11-02T11:31:17.922-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:31:23.500-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T11:31:24.151-05:00  INFO 6284 --- [meli] [Thread-105] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:31:24.613-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:31:24.613-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:31:24.994-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:31:24.999-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:31:25.052-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e67481b6-404b-3d63-981e-4612cf34261c
-2024-11-02T11:31:25.134-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:31:25.135-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:31:25.135-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:31:25.189-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:31:25.189-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 573 ms
-2024-11-02T11:31:25.254-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:31:25.284-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:31:25.352-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:31:25.371-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:31:26.455-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:31:26.822-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.599 seconds (process running for 4775.812)
-2024-11-02T11:31:26.823-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:35:30.061-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T11:35:30.572-05:00  INFO 6284 --- [meli] [Thread-115] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:35:30.913-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:35:30.913-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:35:31.167-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:35:31.170-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:35:31.206-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e67481b6-404b-3d63-981e-4612cf34261c
-2024-11-02T11:35:31.260-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:35:31.261-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:35:31.261-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:35:31.305-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:35:31.305-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 390 ms
-2024-11-02T11:35:31.348-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:35:31.367-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:35:31.414-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:35:31.428-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:35:32.257-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:35:32.550-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 1.931 seconds (process running for 5021.54)
-2024-11-02T11:35:32.551-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:35:33.719-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-2024-11-02T11:35:34.203-05:00  INFO 6284 --- [meli] [Thread-121] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:35:34.552-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:35:34.552-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:35:34.781-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:35:34.784-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:35:34.821-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e67481b6-404b-3d63-981e-4612cf34261c
-2024-11-02T11:35:34.881-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:35:34.881-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:35:34.881-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:35:34.914-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:35:34.914-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 360 ms
-2024-11-02T11:35:34.954-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:35:34.970-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:35:35.014-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:35:35.025-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:35:35.755-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:35:36.053-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 1.798 seconds (process running for 5025.042)
-2024-11-02T11:35:36.054-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:35:48.113-05:00  INFO 6284 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T11:35:48.620-05:00  INFO 6284 --- [meli] [Thread-127] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:35:48.936-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 6284 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T11:35:48.936-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T11:35:49.156-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T11:35:49.159-05:00  INFO 6284 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2024-11-02T11:35:49.198-05:00  INFO 6284 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e67481b6-404b-3d63-981e-4612cf34261c
-2024-11-02T11:35:49.257-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T11:35:49.257-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T11:35:49.258-05:00  INFO 6284 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T11:35:49.295-05:00  INFO 6284 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T11:35:49.295-05:00  INFO 6284 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 357 ms
-2024-11-02T11:35:49.335-05:00  INFO 6284 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T11:35:49.351-05:00  INFO 6284 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T11:35:49.392-05:00  WARN 6284 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T11:35:49.403-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T11:35:50.105-05:00  INFO 6284 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T11:35:50.380-05:00  INFO 6284 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 1.715 seconds (process running for 5039.369)
-2024-11-02T11:35:50.381-05:00  INFO 6284 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T11:42:42.577-05:00  INFO 6284 --- [meli] [RMI TCP Connection(153)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2024-11-02T11:42:43.077-05:00  INFO 6284 --- [meli] [RMI TCP Connection(153)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:29:57.229-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 16212 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T12:29:57.234-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T12:29:57.334-05:00  INFO 16212 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-11-02T12:29:57.334-05:00  INFO 16212 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-11-02T12:29:58.421-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T12:29:58.447-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
-2024-11-02T12:29:58.667-05:00  INFO 16212 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da64b096-6a8b-3875-9465-7fe2dde08584
-2024-11-02T12:29:59.228-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T12:29:59.243-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T12:29:59.244-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T12:29:59.316-05:00  INFO 16212 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T12:29:59.317-05:00  INFO 16212 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1982 ms
-2024-11-02T12:30:00.067-05:00  INFO 16212 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T12:30:00.514-05:00  INFO 16212 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:30:00.751-05:00  WARN 16212 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T12:30:00.799-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T12:30:02.551-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T12:30:02.854-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 6.498 seconds (process running for 7.646)
-2024-11-02T12:30:58.648-05:00  INFO 16212 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T12:30:59.142-05:00  INFO 16212 --- [meli] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:30:59.506-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 16212 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T12:30:59.506-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T12:30:59.794-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T12:30:59.799-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
-2024-11-02T12:30:59.860-05:00  INFO 16212 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da64b096-6a8b-3875-9465-7fe2dde08584
-2024-11-02T12:30:59.928-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T12:30:59.929-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T12:30:59.929-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T12:30:59.962-05:00  INFO 16212 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T12:30:59.962-05:00  INFO 16212 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 453 ms
-2024-11-02T12:31:00.022-05:00  INFO 16212 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T12:31:00.047-05:00  INFO 16212 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:31:00.115-05:00  WARN 16212 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T12:31:00.131-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T12:31:01.143-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T12:31:01.405-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.199 seconds (process running for 66.197)
-2024-11-02T12:31:01.408-05:00  INFO 16212 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T12:31:04.283-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-02T12:31:04.284-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-02T12:31:04.285-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-11-02T12:31:04.896-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 228 ms
-2024-11-02T12:31:35.989-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-5] c.reto.meli.controller.MeliController    : ProcessIpRequest [ip=195.12.50.155]
-2024-11-02T12:31:35.991-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-5] c.reto.meli.services.impl.MeliServices   : ProcessIpRequest [ip=195.12.50.155]
-2024-11-02T12:31:36.349-05:00 ERROR 16212 --- [meli] [http-nio-7100-exec-5] c.reto.meli.controller.MeliController    : begin -2, end 70, length 70
-
-java.lang.StringIndexOutOfBoundsException: begin -2, end 70, length 70
-	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604) ~[na:na]
-	at java.base/java.lang.String.substring(String.java:2707) ~[na:na]
-	at java.base/java.lang.String.substring(String.java:2680) ~[na:na]
-	at com.reto.meli.services.impl.MeliServices.gestionarIp(MeliServices.java:52) ~[classes/:na]
-	at com.reto.meli.controller.MeliController.gestionarIp(MeliController.java:33) ~[classes/:na]
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:466) ~[spring-orm-6.1.14.jar:6.1.14]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:604) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:373) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.14.jar:6.1.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.5.jar:3.3.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.14.jar:6.1.14]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.14.jar:6.1.14]
+	at jdk.proxy3/jdk.proxy3.$Proxy144.findAll(Unknown Source) ~[na:na]
+	at com.reto.meli.domain.task.CronTask.updateCache(CronTask.java:49) ~[classes/:na]
+	at com.reto.meli.domain.task.CronTask.timedTask(CronTask.java:44) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.13.6.jar:1.13.6]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96) ~[spring-context-6.1.14.jar:6.1.14]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection [Connection to localhost:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:129) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:156) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:164) ~[spring-orm-6.1.14.jar:6.1.14]
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:420) ~[spring-orm-6.1.14.jar:6.1.14]
+	... 32 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.4.jar:42.7.4]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:46) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:126) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 35 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268) ~[postgresql-42.7.4.jar:42.7.4]
+	... 49 common frames omitted
 
-2024-11-02T12:31:36.360-05:00 ERROR 16212 --- [meli] [http-nio-7100-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Falla en la gestion de la ip: 195.12.50.155 >>> begin -2, end 70, length 70] with root cause
+2024-11-03T15:38:15.083-05:00  INFO 2212 --- [meli] [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-03T15:38:15.711-05:00  INFO 2212 --- [meli] [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T15:38:33.848-05:00  INFO 9408 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 9408 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
+2024-11-03T15:38:33.852-05:00  INFO 9408 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T15:38:33.922-05:00  INFO 9408 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-03T15:38:33.923-05:00  INFO 9408 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-03T15:38:34.953-05:00  INFO 9408 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T15:38:35.021-05:00  INFO 9408 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2024-11-03T15:38:35.307-05:00  INFO 9408 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=75e8e1af-ab5d-3e67-8c2e-0c6c8ce67b99
+2024-11-03T15:38:35.832-05:00  INFO 9408 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
+2024-11-03T15:38:35.847-05:00  INFO 9408 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T15:38:35.847-05:00  INFO 9408 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T15:38:35.912-05:00  INFO 9408 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T15:38:35.913-05:00  INFO 9408 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1989 ms
+2024-11-03T15:38:36.551-05:00  INFO 9408 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T15:38:37.420-05:00  INFO 9408 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T15:38:37.661-05:00  WARN 9408 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T15:38:37.713-05:00  INFO 9408 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T15:38:38.021-05:00  INFO 9408 --- [meli] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-03T15:38:39.496-05:00  INFO 9408 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
+2024-11-03T15:38:39.804-05:00  INFO 9408 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 6.741 seconds (process running for 7.585)
+2024-11-03T15:38:40.022-05:00  INFO 9408 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T15:38:40.198-05:00  INFO 9408 --- [meli] [taskScheduler-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@abd1a78
+2024-11-03T15:38:40.201-05:00  INFO 9408 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T15:38:46.736-05:00  INFO 9408 --- [meli] [http-nio-7100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T15:38:46.736-05:00  INFO 9408 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T15:38:46.738-05:00  INFO 9408 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-03T15:38:47.253-05:00  INFO 9408 --- [meli] [http-nio-7100-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 232 ms
+2024-11-03T15:39:00.408-05:00  INFO 9408 --- [meli] [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-03T15:39:00.981-05:00  INFO 9408 --- [meli] [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T15:39:00.984-05:00  INFO 9408 --- [meli] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T15:39:00.987-05:00  INFO 9408 --- [meli] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T20:39:44.680Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : Starting MeliApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+2024-11-03T20:39:44.685Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : The following 1 profile is active: "docker"
+2024-11-03T20:39:46.555Z  INFO 1 --- [meli] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T20:39:46.682Z  INFO 1 --- [meli] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2024-11-03T20:39:46.985Z  INFO 1 --- [meli] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b301130-dd42-3fba-b54f-1feae9aa5b4e
+2024-11-03T20:39:47.606Z  INFO 1 --- [meli] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
+2024-11-03T20:39:47.629Z  INFO 1 --- [meli] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T20:39:47.630Z  INFO 1 --- [meli] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T20:39:47.699Z  INFO 1 --- [meli] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T20:39:47.700Z  INFO 1 --- [meli] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2907 ms
+2024-11-03T20:39:48.581Z  INFO 1 --- [meli] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T20:39:49.965Z  INFO 1 --- [meli] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:39:50.444Z  WARN 1 --- [meli] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T20:39:51.134Z  INFO 1 --- [meli] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-03T20:39:53.539Z  INFO 1 --- [meli] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
+2024-11-03T20:39:53.570Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : Started MeliApplication in 9.799 seconds (process running for 10.64)
+2024-11-03T20:39:53.971Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T20:39:53.972Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T20:39:53.975Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-03T20:39:54.927Z  INFO 1 --- [meli] [http-nio-7100-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 322 ms
+2024-11-03T20:40:00.017Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T20:40:00.388Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@787b4fde
+2024-11-03T20:40:00.391Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T20:40:00.623Z ERROR 1 --- [meli] [http-nio-7100-exec-6] c.reto.meli.controller.MeliController    : No value present
 
-java.lang.Exception: Falla en la gestion de la ip: 195.12.50.155 >>> begin -2, end 70, length 70
-	at com.reto.meli.controller.MeliController.gestionarIp(MeliController.java:36) ~[classes/:na]
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Unknown Source) ~[na:na]
+	at com.reto.meli.domain.helper.HelperUtils.getStats(HelperUtils.java:100) ~[!/:0.0.1-SNAPSHOT]
+	at com.reto.meli.services.impl.MeliServices.queryStats(MeliServices.java:109) ~[!/:0.0.1-SNAPSHOT]
+	at com.reto.meli.controller.MeliController.getStats(MeliController.java:44) ~[!/:0.0.1-SNAPSHOT]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar!/:6.0.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar!/:6.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
 
-2024-11-02T12:32:52.744-05:00  INFO 16212 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T12:32:53.196-05:00  INFO 16212 --- [meli] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:32:53.543-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 16212 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T12:32:53.543-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T12:32:53.760-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T12:32:53.763-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
-2024-11-02T12:32:53.805-05:00  INFO 16212 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da64b096-6a8b-3875-9465-7fe2dde08584
-2024-11-02T12:32:53.877-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T12:32:53.878-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T12:32:53.878-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T12:32:53.908-05:00  INFO 16212 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T12:32:53.908-05:00  INFO 16212 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 362 ms
-2024-11-02T12:32:53.951-05:00  INFO 16212 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T12:32:53.970-05:00  INFO 16212 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:32:54.020-05:00  WARN 16212 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T12:32:54.033-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T12:32:54.858-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T12:32:55.126-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 1.867 seconds (process running for 179.918)
-2024-11-02T12:32:55.128-05:00  INFO 16212 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T12:33:02.371-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-02T12:33:02.372-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-02T12:33:02.374-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-11-02T12:33:02.379-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-1] c.reto.meli.controller.MeliController    : ProcessIpRequest [ip=195.12.50.155]
-2024-11-02T12:33:02.380-05:00  INFO 16212 --- [meli] [http-nio-7100-exec-1] c.reto.meli.services.impl.MeliServices   : ProcessIpRequest [ip=195.12.50.155]
-2024-11-02T12:42:53.061-05:00  INFO 16212 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T12:42:53.577-05:00  INFO 16212 --- [meli] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:42:53.952-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 16212 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T12:42:53.952-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T12:42:54.192-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T12:42:54.196-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
-2024-11-02T12:42:54.250-05:00  INFO 16212 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da64b096-6a8b-3875-9465-7fe2dde08584
-2024-11-02T12:42:54.315-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T12:42:54.316-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T12:42:54.316-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T12:42:54.347-05:00  INFO 16212 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T12:42:54.347-05:00  INFO 16212 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 393 ms
-2024-11-02T12:42:54.406-05:00  INFO 16212 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T12:42:54.426-05:00  INFO 16212 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:42:54.470-05:00  WARN 16212 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T12:42:54.482-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T12:42:55.357-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T12:42:55.621-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 1.985 seconds (process running for 780.414)
-2024-11-02T12:42:55.623-05:00  INFO 16212 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T12:45:16.734-05:00  INFO 16212 --- [meli] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-02T12:45:17.423-05:00  INFO 16212 --- [meli] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:45:17.759-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 16212 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
-2024-11-02T12:45:17.760-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-11-02T12:45:18.029-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-02T12:45:18.033-05:00  INFO 16212 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
-2024-11-02T12:45:18.074-05:00  INFO 16212 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da64b096-6a8b-3875-9465-7fe2dde08584
-2024-11-02T12:45:18.144-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
-2024-11-02T12:45:18.145-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-02T12:45:18.145-05:00  INFO 16212 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-02T12:45:18.176-05:00  INFO 16212 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-02T12:45:18.176-05:00  INFO 16212 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 413 ms
-2024-11-02T12:45:18.219-05:00  INFO 16212 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-02T12:45:18.238-05:00  INFO 16212 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-02T12:45:18.292-05:00  WARN 16212 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-02T12:45:18.308-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-02T12:45:19.203-05:00  INFO 16212 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
-2024-11-02T12:45:19.485-05:00  INFO 16212 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 2.011 seconds (process running for 924.277)
-2024-11-02T12:45:19.486-05:00  INFO 16212 --- [meli] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-11-02T14:34:32.969-05:00  INFO 16212 --- [meli] [RMI TCP Connection(168)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2024-11-02T14:34:33.992-05:00  INFO 16212 --- [meli] [RMI TCP Connection(168)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:40:00.640Z ERROR 1 --- [meli] [http-nio-7100-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Falla en la consulta de stats >>> No value present] with root cause
+
+java.lang.Exception: Falla en la consulta de stats >>> No value present
+	at com.reto.meli.controller.MeliController.getStats(MeliController.java:47) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar!/:6.0.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar!/:6.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+
+2024-11-03T20:40:50.165Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:40:50.172Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T20:40:50.179Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T15:41:29.639-05:00  INFO 13028 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Starting MeliApplication using Java 17.0.6 with PID 13028 (C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre\target\classes started by yilbe in C:\Users\yilbe\OneDrive\Escritorio\MERCADO_LIBRE\RetoMercadoLibre)
+2024-11-03T15:41:29.642-05:00  INFO 13028 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-03T15:41:29.709-05:00  INFO 13028 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-03T15:41:29.710-05:00  INFO 13028 --- [meli] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-03T15:41:30.823-05:00  INFO 13028 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T15:41:30.880-05:00  INFO 13028 --- [meli] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-11-03T15:41:31.100-05:00  INFO 13028 --- [meli] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=75e8e1af-ab5d-3e67-8c2e-0c6c8ce67b99
+2024-11-03T15:41:31.691-05:00  INFO 13028 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
+2024-11-03T15:41:31.707-05:00  INFO 13028 --- [meli] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T15:41:31.707-05:00  INFO 13028 --- [meli] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T15:41:31.769-05:00  INFO 13028 --- [meli] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T15:41:31.770-05:00  INFO 13028 --- [meli] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2059 ms
+2024-11-03T15:41:32.435-05:00  INFO 13028 --- [meli] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T15:41:33.362-05:00  INFO 13028 --- [meli] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T15:41:33.593-05:00  WARN 13028 --- [meli] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T15:41:33.647-05:00  INFO 13028 --- [meli] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-03T15:41:33.961-05:00  INFO 13028 --- [meli] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-03T15:41:35.529-05:00  INFO 13028 --- [meli] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
+2024-11-03T15:41:35.831-05:00  INFO 13028 --- [meli] [restartedMain] com.reto.meli.MeliApplication            : Started MeliApplication in 7.016 seconds (process running for 7.856)
+2024-11-03T15:41:36.873-05:00  INFO 13028 --- [meli] [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-03T15:41:37.429-05:00  INFO 13028 --- [meli] [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:42:18.636Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : Starting MeliApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+2024-11-03T20:42:18.641Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : The following 1 profile is active: "docker"
+2024-11-03T20:42:20.468Z  INFO 1 --- [meli] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T20:42:20.548Z  INFO 1 --- [meli] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2024-11-03T20:42:20.880Z  INFO 1 --- [meli] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b301130-dd42-3fba-b54f-1feae9aa5b4e
+2024-11-03T20:42:21.565Z  INFO 1 --- [meli] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
+2024-11-03T20:42:21.593Z  INFO 1 --- [meli] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T20:42:21.595Z  INFO 1 --- [meli] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T20:42:21.665Z  INFO 1 --- [meli] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T20:42:21.667Z  INFO 1 --- [meli] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2919 ms
+2024-11-03T20:42:22.469Z  INFO 1 --- [meli] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T20:42:23.681Z  INFO 1 --- [meli] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:42:24.033Z  WARN 1 --- [meli] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T20:42:24.568Z  INFO 1 --- [meli] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-03T20:42:26.757Z  INFO 1 --- [meli] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
+2024-11-03T20:42:26.814Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : Started MeliApplication in 9.141 seconds (process running for 10.03)
+2024-11-03T20:42:30.022Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T20:42:30.214Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T20:42:30.215Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T20:42:30.219Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-03T20:42:30.595Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8e2d714
+2024-11-03T20:42:30.599Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T20:42:31.113Z  INFO 1 --- [meli] [http-nio-7100-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 413 ms
+2024-11-03T20:42:57.588Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:42:57.593Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T20:42:57.600Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-03T20:46:55.003Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : Starting MeliApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+2024-11-03T20:46:55.007Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : The following 1 profile is active: "docker"
+2024-11-03T20:46:56.636Z  INFO 1 --- [meli] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-03T20:46:56.709Z  INFO 1 --- [meli] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2024-11-03T20:46:56.962Z  INFO 1 --- [meli] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b301130-dd42-3fba-b54f-1feae9aa5b4e
+2024-11-03T20:46:57.491Z  INFO 1 --- [meli] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7100 (http)
+2024-11-03T20:46:57.513Z  INFO 1 --- [meli] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-03T20:46:57.514Z  INFO 1 --- [meli] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-03T20:46:57.561Z  INFO 1 --- [meli] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-03T20:46:57.562Z  INFO 1 --- [meli] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2469 ms
+2024-11-03T20:46:58.177Z  INFO 1 --- [meli] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-03T20:46:59.137Z  INFO 1 --- [meli] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:46:59.448Z  WARN 1 --- [meli] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-03T20:46:59.946Z  INFO 1 --- [meli] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-03T20:47:01.775Z  INFO 1 --- [meli] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7100 (http) with context path '/'
+2024-11-03T20:47:01.809Z  INFO 1 --- [meli] [main] com.reto.meli.MeliApplication            : Started MeliApplication in 7.603 seconds (process running for 8.343)
+2024-11-03T20:47:02.149Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-03T20:47:02.150Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-03T20:47:02.153Z  INFO 1 --- [meli] [http-nio-7100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-03T20:47:03.027Z  INFO 1 --- [meli] [http-nio-7100-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 344 ms
+2024-11-03T20:47:10.019Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-03T20:47:10.438Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e098d51
+2024-11-03T20:47:10.440Z  INFO 1 --- [meli] [taskScheduler-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-03T20:48:07.022Z  INFO 1 --- [meli] [http-nio-7100-exec-4] c.reto.meli.controller.MeliController    : ProcessIpRequest [ip=5.255.77.225]
+2024-11-03T20:48:34.913Z  INFO 1 --- [meli] [http-nio-7100-exec-6] c.reto.meli.controller.MeliController    : ProcessIpRequest [ip=110.50.243.6]
+2024-11-03T20:49:53.247Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-03T20:49:53.252Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-03T20:49:53.256Z  INFO 1 --- [meli] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -4,7 +4,7 @@ server:
 
 spring: 
   datasource:
-    url: jdbc:postgresql://localhost:5434/meli
+    url: jdbc:postgresql://localhost:5436/postgres
     username: postgres
     password: 12345
     
@@ -31,9 +31,6 @@ logging:
     name: logs/meli_challenge.log
 
 
-    
-
-
 localizarip:
   url: http://api.ipapi.com/api
   apikey: 6a507ec223311991da36a5ac892609ee
@@ -45,4 +42,7 @@ currencyinfo:
   url: https://v6.exchangerate-api.com/v6
   apikey: e0d168703c165811128a541a
   
+  
+cron:
+  timer: 0/2 * * * * *
   

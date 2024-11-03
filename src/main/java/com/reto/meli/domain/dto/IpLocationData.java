@@ -20,6 +20,7 @@ public class IpLocationData {
     private String ip_routing_type;
     private String connection_type;
     private Location location;
+    private Boolean success;
 
 	public IpLocationData() {
 
@@ -28,7 +29,7 @@ public class IpLocationData {
 	public IpLocationData(String ip, String type, String continent_code, String continent_name, String country_code,
 			String country_name, String region_code, String region_name, String city, String zip, Double latitude,
 			Double longitude, String msa, String dma, String radius, String ip_routing_type, String connection_type,
-			Location location) {
+			Location location, Boolean success) {
 		super();
 		this.ip = ip;
 		this.type = type;
@@ -48,7 +49,9 @@ public class IpLocationData {
 		this.ip_routing_type = ip_routing_type;
 		this.connection_type = connection_type;
 		this.location = location;
+		this.success = success;
 	}
+
 
 	public String getIp() {
 		return ip;
@@ -194,6 +197,13 @@ public class IpLocationData {
 		this.location = location;
 	}
 
-	
+	public Boolean getSuccess() {
+		return success;
+	}
+
+	public void setSuccess(Boolean success) {
+		this.success = success;
+	}
+
 
 }

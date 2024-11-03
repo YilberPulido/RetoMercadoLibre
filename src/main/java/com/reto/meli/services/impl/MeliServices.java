@@ -13,9 +13,12 @@ import com.reto.meli.domain.dto.IpLocationData;
 import com.reto.meli.domain.dto.Language;
 import com.reto.meli.domain.dto.ProcessIpRequest;
 import com.reto.meli.domain.dto.RespuestaServicio;
+import com.reto.meli.domain.dto.StatsDTO;
 import com.reto.meli.domain.dto.TraceIpResponse;
 import com.reto.meli.domain.helper.HelperApis;
 import com.reto.meli.domain.helper.HelperUtils;
+import com.reto.meli.infraestructure.model.Iptrace;
+import com.reto.meli.infraestructure.repository.IpTraceRepository;
 import com.reto.meli.services.IMeliServices;
 
 @Service
@@ -27,6 +30,9 @@ public class MeliServices implements IMeliServices {
 	@Autowired
 	private HelperUtils helperUtils;
 	
+	@Autowired
+	private IpTraceRepository ipTraceRepository;
+	
 	
 	private static final Logger LOGGER = LogManager.getLogger(MeliServices.class);
 
@@ -35,6 +41,15 @@ public class MeliServices implements IMeliServices {
 		
 		//Se consume api externa para obtener informacion de la ip recibida
 		IpLocationData responseLocateIp  = helperApis.traceIp(request.getIp());
+		
+		
+		//Validamos que el resultado sea el esperado
+		if(responseLocateIp.getSuccess() != null) {
+			return new RespuestaServicio("IP01", false, "Wrong IP or it is not trackable.");
+		}
+		String pais = responseLocateIp.getCountry_name();
+		
+		Iptrace trace =  ipTraceRepository.findTraceByCountry(pais);
 			
 		//Se recorre la lista de idiomas para crear un texto
 		List<Language> lenguajes = responseLocateIp.getLocation().getLanguages();
@@ -73,13 +88,38 @@ public class MeliServices implements IMeliServices {
 		response.setIp(request.getIp());
 		response.setIdiomas(idiomas);
 		response.setPais(responseLocateIp.getCountry_name());
-		response.setIsoCode(responseLocateIp.getContinent_code());
+		response.setIsoCode(responseLocateIp.getCountry_code());
 		response.setDistancia(distancia);
 		response.setHora(hora);
 		response.setFechaActual(fechaActual);
 		response.setMoneda(moneda);
 		
+		if(trace!=null) {
+			trace.setInvocaciones(trace.getInvocaciones()+1);
+		}
+		else {
+			trace = new Iptrace();
+			trace.setDistancia(dist);
+			trace.setInvocaciones(1);
+			trace.setPais(response.getPais());
+		}
+		
+		ipTraceRepository.save(trace);
+		
 		return new RespuestaServicio("0000", response, "EXITO");
 	}
 
+	@Override
+	public RespuestaServicio queryStats() throws Exception {
+		StatsDTO response = helperUtils.getStats();
+		
+		if (response == null) {
+			return new RespuestaServicio("QS01", false, "DATA NO FOUND");
+		}
+		
+		return new RespuestaServicio("0000", response, "EXITO");
+	}
+
+	
+	
 }

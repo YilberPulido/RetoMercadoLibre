@@ -6,10 +6,17 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.List;
+import java.util.Comparator;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.reto.meli.domain.cache.CacheMeli;
+import com.reto.meli.domain.dto.StatsDTO;
+import com.reto.meli.infraestructure.model.Iptrace;
 
 @Component
 public class HelperUtils {
@@ -19,6 +26,13 @@ public class HelperUtils {
     
     // Radio de la Tierra en kilómetros
     private static final Double EARTH_RADIUS = 6371.0;
+    
+    private final CacheMeli cacheMeli;
+    
+    @Autowired
+    public HelperUtils(CacheMeli cacheMeli) {
+    	this.cacheMeli = cacheMeli;
+    }
 	
 	
 	
@@ -75,6 +89,29 @@ public class HelperUtils {
 		String strDate = dateFormat.format(date);
 		
 		return strDate;
+	}
+	
+	public StatsDTO getStats (){
+		List<Iptrace>traces = cacheMeli.getCache();
+		
+		if(traces.isEmpty()) {
+			return null;
+		}
+		
+		//obtener el pais con mayor distancia
+		Iptrace farthest = traces.stream()
+	        .max(Comparator.comparing(Iptrace::getDistancia))
+	        .get();
+
+		//obtener el pais con menor distancia
+        Iptrace closest = traces.stream()
+            .min(Comparator.comparing(Iptrace::getDistancia))
+            .get();
+        
+        StatsDTO result = new StatsDTO(farthest.getDistancia(), farthest.getPais(), 
+        		closest.getDistancia(), closest.getPais());
+	
+        return result;
 	}
 
 }

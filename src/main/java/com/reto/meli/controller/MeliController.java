@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ import com.reto.meli.services.impl.MeliServices;
 import io.swagger.v3.oas.annotations.Operation;
 
 @Controller
-@RequestMapping("/v1/traceip")
+@RequestMapping("/v1/meli")
 public class MeliController {
 	
 	@Autowired
@@ -26,7 +27,7 @@ public class MeliController {
 
 	
 	@Operation(summary = "Procesa una ip obteniendo datos de esta y guardandolos en la DB") 
-	@PostMapping("/meli/gestion/ip")
+	@PostMapping("/trace/ip")
 	public @ResponseBody RespuestaServicio gestionarIp(@RequestBody ProcessIpRequest request) throws Exception{
 		try {
 			LOGGER.info(request.toString());
@@ -37,22 +38,16 @@ public class MeliController {
 		}
 	}
 	
-	/*@GetMapping("/historico/evbi/{id}")
-	public @ResponseBody PagedResponse<IGraficAlcoholimetro> alcoholimetriaHistoricoByBascula(
-			@PathVariable("id") Long id,
-	@RequestParam(value = "datestart", defaultValue = AppConstants.DATE_START) String dateStart,
-	@RequestParam(value = "dateend", defaultValue = AppConstants.DATE_END) String dateEnd,
-	@RequestParam(value = "page", defaultValue = AppConstants.DEFAULT_PAGE_NUMBER) Integer page,
-	@RequestParam(value = "size", defaultValue = AppConstants.DEFAULT_PAGE_SIZE) Integer size,
-	@RequestParam(value = "filter", defaultValue = AppConstants.DEFAULT_FILTER) String filter) throws Exception {
+	@Operation(summary = "Retorna estadisticas de los datos obtenidos de las IP") 
+	@GetMapping("/querystats")
+	public @ResponseBody RespuestaServicio getStats () throws Exception {
 		try {
-			
-			return alcoholimetroServices.alcoholimetriaHistoric(id, dateStart, dateEnd,size,page,filter);
+			return meliServices.queryStats();
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage(), e);
-			return new PagedResponse<IGraficAlcoholimetro>(null,0,0,0,0,false);
+			throw new Exception("Falla en la consulta de stats >>> "+e.getMessage());
 		}
-	}*/
+	}
 	
 	
 }
