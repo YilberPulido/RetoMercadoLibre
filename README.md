@@ -4,7 +4,7 @@ Proyecto desarrollado por Yilber Pulido
 
 ## Instrucciones
 Para levantar el proyecto debes contar con docker en tu equipo, una vez obenido seguir los siguientes pasos.
-
+### compilar el proyecto con java 17 para generar el archivo jar en la carpeta target
 ### En una terminal ubicate en la carpeta raiz del proyecto
 ### Ejecuta el comando docker compose up -d
 ### Espera unos segundos y prodras acceder al swagger por medio la siguiente url
