@@ -108,8 +108,15 @@ public class HelperUtils {
             .min(Comparator.comparing(Iptrace::getDistancia))
             .get();
         
+        Double averageDistance = traces.stream()
+        	    .map(trace -> trace.getDistancia() * trace.getInvocaciones())
+        	    .reduce(0.0, Double::sum) / 
+        	    traces.stream()
+        	        .mapToInt(Iptrace::getInvocaciones)
+        	        .sum();
+        
         StatsDTO result = new StatsDTO(farthest.getDistancia(), farthest.getPais(), 
-        		closest.getDistancia(), closest.getPais());
+        		closest.getDistancia(), closest.getPais(),averageDistance);
 	
         return result;
 	}

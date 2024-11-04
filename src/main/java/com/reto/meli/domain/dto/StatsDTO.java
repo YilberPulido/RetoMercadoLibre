@@ -13,17 +13,21 @@ public class StatsDTO implements Serializable {
     private String farthestCountry;
     private Double closestDistance;
     private String closestCountry;
+    private Double averageDistance;
+    
 	
 	public StatsDTO() {
 		
 	}
 
-	public StatsDTO(Double farthestDistance, String farthestCountry, Double closestDistance, String closestCountry) {
+	public StatsDTO(Double farthestDistance, String farthestCountry, Double closestDistance, String closestCountry,
+			Double averageDistance) {
 		super();
 		this.farthestDistance = farthestDistance;
 		this.farthestCountry = farthestCountry;
 		this.closestDistance = closestDistance;
 		this.closestCountry = closestCountry;
+		this.averageDistance = averageDistance;
 	}
 
 	public Double getFarthestDistance() {
@@ -57,7 +61,13 @@ public class StatsDTO implements Serializable {
 	public void setClosestCountry(String closestCountry) {
 		this.closestCountry = closestCountry;
 	}
-	
-	
+
+	public Double getAverageDistance() {
+		return averageDistance;
+	}
+
+	public void setAverageDistance(Double averageDistance) {
+		this.averageDistance = averageDistance;
+	}
 
 }
